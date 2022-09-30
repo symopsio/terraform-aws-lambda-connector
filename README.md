@@ -8,7 +8,7 @@ Only the supplied `runtime_role_arns` are trusted to assume this role.
 
 ```hcl
 module "lambda_connector" {
-  source  = "symopsio/lambda-connector/sym"
+  source  = "symopsio/lambda-connector/aws"
   version = ">= 1.0.0"
 
   environment       = "sandbox"
