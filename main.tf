@@ -26,6 +26,8 @@ resource "aws_iam_policy" "lambda_policy" {
 
   description = "Allows Sym to invoke lambda functions"
   policy      = data.aws_iam_policy_document.lambda_policy.json
+
+  tags = var.tags
 }
 
 data "aws_iam_policy_document" "lambda_policy" {
